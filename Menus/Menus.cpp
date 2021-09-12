@@ -125,3 +125,18 @@ int const Menus::Funcionario(){
 
     return ExibidorDeMenus();
 }
+
+int const Menus::FuncionarioPatente(){
+
+    string Menu[3] = {"PRESIDENTE DA EMPRESA", "GERENTE DE REGIÃO", "VENDEDOR GERAL"};
+
+    MensagemAmigavel.clear();
+    MensagemAmigavel.push_back("MENU DE FUNCIOÁRIO - CARGOS DA EMPRESA");
+
+    Exibidor.clear();
+    for(int I=0; I<3; I++){
+        Exibidor.push_back(Menu[I]);
+    }
+
+    return ExibidorDeMenus();
+}
