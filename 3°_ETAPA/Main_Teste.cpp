@@ -30,11 +30,11 @@ int main(){
             case 0:{
                 while(1){
                     teste = Teste.Funcionario();
-                    switch(teste){/*Menu cliente*/
+                    switch(teste){/*Menu funcionário*/
                         case 0:{
                             while(1){
                                 teste = Teste.FuncionarioPatente();
-                                switch(teste){
+                                switch(teste){/*Menu funcionário cliente*/
                                     case 0:{
                                         cout << endl << "Você entrou na opção 1" << endl;
                                         system("pause"); 
@@ -77,8 +77,40 @@ int main(){
                     teste = Teste.Cliente();
                     switch(teste){/*Menu cliente*/
                         case 0:{
-                            cout << endl << "Você entrou na opção 1" << endl;
-                            system("pause"); 
+                            while(1){
+                                teste = Teste.ClienteEntrar();
+                                switch(teste){
+                                    case 0:{
+                                        cout << endl << "Você entrou na opção 1" << endl;
+                                        system("pause"); 
+                                    }
+                                    break;
+                                    case 1:{
+                                        cout << endl << "Você entrou na opção 2" << endl;
+                                        system("pause"); 
+                                    }
+                                    break;
+                                    case 2:{
+                                        cout << endl << "Você entrou na opção 3" << endl;
+                                        system("pause"); 
+                                    }
+                                    break;
+                                    case 3:{
+                                        cout << endl << "Você entrou na opção 4" << endl;
+                                        system("pause"); 
+                                    }
+                                    break;
+                                    case 4:{
+                                        cout << endl << "Você entrou na opção 5" << endl;
+                                        system("pause"); 
+                                    }
+                                    break;
+                                }
+                                if(teste == 99){
+                                    teste = 0;
+                                    break;
+                                }
+                            }
                         }
                         break;
                         case 1:{
@@ -102,6 +134,5 @@ int main(){
             break;
         }      
     }
-
     return 0;
 }

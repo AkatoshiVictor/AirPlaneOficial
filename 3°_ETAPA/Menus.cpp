@@ -96,20 +96,7 @@ int const Menus::MenuGeral(){
     return ExibidorDeMenus();
 }
 
-int const Menus::Cliente(){
-
-    string Menu[2] = {"ENTRAR", "CADASTRE-SE"};
-
-    MensagemAmigavel.clear();
-    MensagemAmigavel.push_back("MENU DE CLIENTE");
-
-    Exibidor.clear();
-    for(int I=0; I<2; I++){
-        Exibidor.push_back(Menu[I]);
-    }
-
-    return ExibidorDeMenus();
-}
+/*Nenu dos funcionários e suas opções*/
 
 int const Menus::Funcionario(){
 
@@ -135,6 +122,36 @@ int const Menus::FuncionarioPatente(){
 
     Exibidor.clear();
     for(int I=0; I<3; I++){
+        Exibidor.push_back(Menu[I]);
+    }
+
+    return ExibidorDeMenus();
+}
+
+/*Menus dos clientes e suas opções*/
+int const Menus::Cliente(){
+
+    string Menu[2] = {"ENTRAR", "CADASTRE-SE"};
+
+    MensagemAmigavel.clear();
+    MensagemAmigavel.push_back("MENU DE CLIENTE");
+
+    Exibidor.clear();
+    for(int I=0; I<2; I++){
+        Exibidor.push_back(Menu[I]);
+    }
+
+    return ExibidorDeMenus();
+}
+
+int const Menus::ClienteEntrar(){
+    string Menu[5] = {"COMPRAR PASSAGENS", "VER HÓTEIS", "VER PONTOS TURÍSTICOS", "EDITAR COMPRAS", "EDITAR PERFIL"};
+
+    MensagemAmigavel.clear();
+    MensagemAmigavel.push_back("MENU DE CLIENTE - PERFIL");
+
+    Exibidor.clear();
+    for(int I=0; I<5; I++){
         Exibidor.push_back(Menu[I]);
     }
 

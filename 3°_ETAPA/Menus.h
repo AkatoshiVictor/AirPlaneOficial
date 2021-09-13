@@ -12,6 +12,8 @@ class Menus{
 
         int const Funcionario();
         int const FuncionarioPatente();
+        
         int const Cliente();
+        int const ClienteEntrar();
        
 };
