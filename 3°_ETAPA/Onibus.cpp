@@ -2,7 +2,7 @@
 
 Onibus::Onibus(float preco, int origem, int destino, float preco_final,
                     string dia, string partida, string chegada,
-                    float a_taxa_executiva,float a_taxa_pobres)
+                    float o_taxa_executiva,float o_taxa_economica)
                         : Servicos(preco, origem, destino,
                         preco_final, dia, partida, chegada){
 

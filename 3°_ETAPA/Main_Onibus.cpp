@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <locale>
 #include <iomanip>
@@ -11,6 +12,8 @@ using namespace std;
 #include "Onibus.cpp"
 
 int main(){
+
+    setlocale(LC_ALL, "");
 
     /*TESTANDO OS MÉTODOS SET E GET DA CLASSE AVIÃO*/
     float taxa_classe1, taxa_classe2;
@@ -33,7 +36,9 @@ int main(){
 
     /*TODOS OS ATRIBUTOS QUE O CONSTRUTOR RECEBE 0 OU ALGO VAZIO " ",
         SERÃO ATRIBUTOS QUE NEM O USUÁRIO NÃO VAI INSERIR*/
+
     Onibus O(0, origem, destino, 0, " ", " ", " ", taxa_classe1, taxa_classe2);
+
 
     O.imprime_dados_3();
 

@@ -47,13 +47,13 @@ void Aviao::imprime_dados(){
     cout<<"\n\nValores:"<<endl
         <<"Taxa da primeira classe: "
         <<get_a_taxa_primeira_classe()
-        <<"reais/km"<<endl
+        <<" reais/km"<<endl
         <<"Taxa da classe executiva: "
         <<get_a_taxa_executiva()
-        <<"reais/km"<<endl
+        <<" reais/km"<<endl
         <<"Taxa da classe econômica: "
         <<get_a_taxa_economica()
-        <<"reais/km\n\n"<<endl;
+        <<" reais/km\n\n"<<endl;
         imprime_dados_2();
 }
 

@@ -12,6 +12,8 @@ using namespace std;
 
 int main(){
 
+    setlocale(LC_ALL, " ");
+
     /*TESTANDO OS MÉTODOS SET E GET DA CLASSE AVIÃO*/
     float taxa_classe1, taxa_classe2, taxa_classe3;
     int origem, destino;
